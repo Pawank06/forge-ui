@@ -1,0 +1,39 @@
+import Button from '@/components/button'
+import CodePreview from '@/components/code-preview'
+
+# Button Component
+
+The Button component is a versatile and customizable button for use in forms, dialogs, and more.
+
+<CodePreview code={`
+import { Button } from 'our-component-library'
+
+function MyComponent() {
+  return (
+    <Button variant="primary">
+      Click me
+    </Button>
+  )
+}
+`}>
+  <Button variant="primary">Click me</Button>
+</CodePreview>
+
+## Props
+
+- `variant`: 'primary' | 'secondary' (default: 'primary')
+- `children`: React.ReactNode
+
+## Examples
+
+### Primary Button
+
+<CodePreview code={`<Button variant="primary">Primary Button</Button>`}>
+  <Button variant="primary">Primary Button</Button>
+</CodePreview>
+
+### Secondary Button
+
+<CodePreview code={`<Button variant="secondary">Secondary Button</Button>`}>
+  <Button variant="secondary">Secondary Button</Button>
+</CodePreview>
